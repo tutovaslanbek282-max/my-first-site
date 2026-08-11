@@ -74,7 +74,28 @@
 
 <script>
     function showMessage() {
-        alert("Спасибо, что заглянул! 🚀");
+        const message = document.createElement("div");
+
+        message.innerHTML = "Спасибо, что заглянул! 🚀";
+
+        message.style.position = "fixed";
+        message.style.top = "50%";
+        message.style.left = "50%";
+        message.style.transform = "translate(-50%, -50%)";
+        message.style.padding = "25px 35px";
+        message.style.background = "#7c5cff";
+        message.style.color = "white";
+        message.style.borderRadius = "18px";
+        message.style.fontSize = "20px";
+        message.style.fontWeight = "bold";
+        message.style.zIndex = "9999";
+        message.style.boxShadow = "0 10px 40px rgba(0,0,0,0.5)";
+
+        document.body.appendChild(message);
+
+        setTimeout(() => {
+            message.remove();
+        }, 2500);
     }
 </script>
 </body>
