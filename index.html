@@ -172,6 +172,63 @@ html {
     animation-delay: 0.6s;
     animation-fill-mode: both;
 }
+
+.skills {
+    margin-top: 50px;
+    padding: 35px;
+    width: 100%;
+    border: 1px solid #25252d;
+    border-radius: 20px;
+    background: #111116;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill-card {
+    padding: 25px;
+    border: 1px solid #25252d;
+    border-radius: 18px;
+    background: #0b0b0f;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+.skill-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        
     </style>
 </head>
 
@@ -232,6 +289,41 @@ html {
         в создании сайтов.
     </p>
 </section>
+
+<section class="skills" id="skills">
+
+    <h2>Мои навыки</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Создание сайтов</h3>
+            <p>Создание современных сайтов с помощью ИИ.</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🤖</div>
+            <h3>Искусственный интеллект</h3>
+            <p>Использование ИИ для разработки и творчества.</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🎨</div>
+            <h3>Дизайн</h3>
+            <p>Создание красивых и удобных интерфейсов.</p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">💻</div>
+            <h3>HTML / CSS / JavaScript</h3>
+            <p>Основы веб-разработки и интерактивности.</p>
+        </div>
+
+    </div>
+
+</section>
+    
 <section class="contact" id="contact">
     <h2>Контакты</h2>
 
