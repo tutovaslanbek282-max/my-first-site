@@ -295,6 +295,7 @@ html {
     left: auto;
     right: 15px;
     transform: none;
+    display: none;
     flex-direction: column;
     align-items: stretch;
     width: 180px;
@@ -359,7 +360,12 @@ html {
 
 <body>
     <button onclick="toggleMenu()" class="menu-button">☰</button>
-
+<nav class="navbar">
+    <a href="#home">Главная</a>
+    <a href="#about">Обо мне</a>
+    <a href="#skills">Навыки</a>
+    <a href="#contact">Контакты</a>
+</nav>
     <div id="home"></div>
     <div class="container">
         <h1>Привет 👋</h1>
