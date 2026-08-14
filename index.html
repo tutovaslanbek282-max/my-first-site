@@ -287,22 +287,25 @@ html {
         grid-template-columns: 1fr;
     }
 }
-        
- .navbar {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    padding: 10px;
-    background: rgba(20, 20, 25, 0.95);
-    border: 1px solid #333;
-    border-radius: 50px;
-    z-index: 9999;
-    white-space: nowrap;
-}
 
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+        
+.navbar {
+    top: 75px;
+    left: auto;
+    right: 15px;
+    transform: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 180px;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 18px;
+    background: rgba(20, 20, 25, 0.98);
+}
+.navbar.open {
+    display: flex;
+}
 .navbar a {
     color: #aaa;
     text-decoration: none;
@@ -332,6 +335,21 @@ html {
         padding: 8px 10px;
     }
 }
+
+        .menu-button {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background: #7c5cff;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 10001;
+}
     
     </style>
 </head>
@@ -354,6 +372,17 @@ html {
 
 
 <script>
+
+function toggleMenu() {
+    const menu = document.querySelector(".navbar");
+
+    if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+    } else {
+        menu.classList.add("open");
+    }
+}
+    
     function showMessage() {
         const message = document.createElement("div");
 
