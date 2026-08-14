@@ -39,7 +39,16 @@ html {
 }
         
         
-        about {.profile-photo {
+        about
+        
+        main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+        
+        {.profile-photo {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -73,29 +82,24 @@ html {
         }
 
         body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+}
 
-            <nav class="navbar">
-    <a href="#home">Главная</a>
-    <a href="#about">Обо мне</a>
-    <a href="#contact">Контакты</a>
-</nav>
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+}
 
 
             
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            text-align: center;
-        }
+            
 
         h1 {
             font-size: 48px;
