@@ -81,7 +81,65 @@ html {
             padding: 0;
         }
 
-        body {
+        body 
+        .skills {
+    margin-top: 50px;
+    padding: 35px;
+    width: 100%;
+    border: 1px solid #25252d;
+    border-radius: 20px;
+    background: #111116;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill-card {
+    padding: 25px;
+    border: 1px solid #25252d;
+    border-radius: 18px;
+    background: #0b0b0f;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+.skill-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        
+        
+        {
     font-family: Arial, sans-serif;
     background: #0b0b0f;
     color: white;
@@ -229,11 +287,57 @@ html {
     }
 }
         
+ .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(20, 20, 25, 0.95);
+    border: 1px solid #333;
+    border-radius: 50px;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.navbar a {
+    color: #aaa;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: #7c5cff;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        top: 10px;
+        max-width: calc(100% - 20px);
+        overflow-x: auto;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
+    
     </style>
 </head>
 
 <body>
 
+    <div id="home"></div>
     <div class="container">
         <h1>Привет 👋</h1>
 
