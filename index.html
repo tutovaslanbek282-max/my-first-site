@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой первый сайт</title>
 
-    <style>.about {.profile-photo {
+    <style>.
+
+        .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(20, 20, 25, 0.9);
+    border: 1px solid #25252d;
+    border-radius: 50px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #aaa;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background: #7c5cff;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+        
+        
+        about {.profile-photo {
     width: 180px;
     height: 180px;
     object-fit: cover;
@@ -39,6 +73,15 @@
         }
 
         body {
+
+            <nav class="navbar">
+    <a href="#home">Главная</a>
+    <a href="#about">Обо мне</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+
+            
             font-family: Arial, sans-serif;
             background: #111;
             color: white;
