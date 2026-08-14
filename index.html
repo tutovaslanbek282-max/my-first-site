@@ -122,6 +122,24 @@ html {
         button:hover {
             transform: scale(1.05);
         }
+        .contact {
+    margin-top: 40px;
+    padding: 35px;
+    border: 1px solid #25252d;
+    border-radius: 20px;
+    background: #111116;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact p {
+    color: #999;
+    margin-bottom: 25px;
+}
     </style>
 </head>
 
@@ -167,7 +185,7 @@ html {
         }, 2500);
     }
 </script>
-<section class="about">
+<section class="about" id="about">
     <h2>Обо мне</h2>
 <img src="79BF6CD8-AA55-4211-8CCE-DC6049F6CAD2.png" alt="Моя фотография" class="profile-photo">
     <p>
@@ -179,5 +197,19 @@ html {
         Это мой первый проект, и я только начинаю свой путь
         в создании сайтов.
     </p>
-</section> </body>
+</section>
+<section class="contact" id="contact">
+    <h2>Контакты</h2>
+
+    <p>
+        Если хочешь связаться со мной — напиши мне.
+    </p>
+
+    <a href="mailto:example@email.com" class="button">
+        Написать мне →
+    </a>
+</section>
+
+    
+</body>
 </html>
